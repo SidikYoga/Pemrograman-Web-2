@@ -21,7 +21,7 @@
         $ntugas = $_POST['ntugas'];
         $nuts = $_POST['nuts'];
         $nuas = $_POST['nuas'];
-        $nk = (0.1*$nhadir/18);
+        $nk = (0.1*$nhadir*18);
 
         $hasil = ($nk) + (0.2*$ntugas) + (0.3*$nuts) + (0.4*$nuas)/3;
        
@@ -100,7 +100,7 @@
                     <td>Jumlah Hadir</td>
                     <td>: <?= $nhadir ?></td>
                     <td>Nilai Hadir</td>
-                    <td>: <?= $nhadir ?></td>
+                    <td>: <?= $nk ?></td>
                 </tr>
                 <tr>
                     <td>Nilai Tugas</td>
@@ -109,6 +109,10 @@
                     <td>: <?= $nuts ?></td>
                     <td>Nilai UAS</td>
                     <td>: <?= $nuas ?></td>
+                </tr>
+                <tr>
+                    <td>Rata-Rata</td>
+                    <td>: <?= $hasil?></td>
                 </tr>
                 <tr>
                     <td>Grade</td>
